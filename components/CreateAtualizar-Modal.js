@@ -7,7 +7,7 @@ import axios from 'axios'
 export function CreateAtualizarModal(props){
 
     const formRef = useRef()
-    const url = 'http://localhost:8080'
+    const url = 'https://elotech-desafio-production.up.railway.app/'
 
     const getPessoa = async (id) => {
         const response = await axios.get(`${url}/pessoas/${id}`)

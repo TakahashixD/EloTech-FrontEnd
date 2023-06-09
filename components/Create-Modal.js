@@ -6,7 +6,7 @@ import axios from 'axios'
 
 export function CreateModal(props){
     const formRef = useRef()
-    const url = 'http://localhost:8080'
+    const url = 'https://elotech-desafio-production.up.railway.app/'
     
     const savePessoas = async (pessoa) => {
         const response = await axios.post(`${url}/pessoas`, pessoa)
