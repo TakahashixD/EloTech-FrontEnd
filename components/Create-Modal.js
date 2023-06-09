@@ -24,9 +24,9 @@ export function CreateModal(props){
           const bodyPessoa = {
               nome: data.nome,
               cpf: data.cpf,
-              dataNascimento: data.dataNascimento,
+              dataNascimento: data.dataNascimento
             }
-
+            console.log(bodyPessoa)
             const pessoa = await savePessoas(bodyPessoa)
             
             const bodyContato = {
@@ -56,7 +56,7 @@ export function CreateModal(props){
                 <h2>Registre a pessoa</h2>
                 <Input name='nome' placeholder='nome'/>
                 <Input name='cpf' placeholder='cpf válido'/>
-                <Input name='dataNascimento"' placeholder='data de Nascimento (ano-mês-dia) "exemplo: 1999-02-20"'/>
+                <Input name='dataNascimento' placeholder='data de Nascimento (ano-mês-dia) "exemplo: 1999-02-20"'/>
                 <h2>Registre o primeiro contato</h2>
                 <Input name='nomeContato' placeholder='nome do contato'/>
                 <Input name='telefone' placeholder='telefone'/>
