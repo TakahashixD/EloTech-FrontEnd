@@ -18,7 +18,7 @@ export function Card(props){
           setIsModalOpenA(prev => !prev)
         }
   
-    const url = 'https://elotech-desafio-production.up.railway.app/'
+    const url = 'https://elotech-desafio-production.up.railway.app'
     
     const deletePessoa = async (props) => {
         try{

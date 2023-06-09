@@ -6,7 +6,7 @@ import { Card } from '../components/Card'
 import { CreateModal } from '../components/Create-Modal'
 export default function Home() {
 
-    const url = 'https://elotech-desafio-production.up.railway.app/'
+    const url = 'https://elotech-desafio-production.up.railway.app'
     const [pessoas, setPessoas] = useState()
     const [isModalOpen, setIsModalOpen] = useState(false)
   
