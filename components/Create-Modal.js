@@ -7,6 +7,10 @@ import axios from 'axios'
 export function CreateModal(props){
     const formRef = useRef()
     const url = 'https://elotech-desafio-production.up.railway.app'
+    useEffect(() => {
+      savePessoas();
+      saveContato();
+    },[])
     
     const savePessoas = async (pessoa) => {
         const response = await axios.post(`${url}/pessoas`, pessoa)

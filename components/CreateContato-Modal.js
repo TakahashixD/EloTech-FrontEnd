@@ -9,6 +9,10 @@ export function CreateContatoModal(props){
     const formRef = useRef()
     const url = 'https://elotech-desafio-production.up.railway.app'
 
+    useEffect(() => {
+        adicionarContato()
+      },[])
+      
     const getPessoa = async (id) => {
         const response = await axios.get(`${url}/pessoas/${id}`)
         return response.data

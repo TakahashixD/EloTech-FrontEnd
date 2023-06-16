@@ -16,7 +16,7 @@ export default function Home() {
   
     useEffect(() => {
       getPessoas()
-    },[pessoas])
+    },[])
     
     const getPessoas = async () => {
         const response = await axios.get(`${url}/pessoas`)
